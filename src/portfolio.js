@@ -23,10 +23,10 @@ const greeting = {
 const socialMediaLinks = {
   //github: "https://github.com/drakosi99",
   // linkedin: "https://www.linkedin.com/in/",
-  gmail: "contact@.com",
+  gmail: "rachitmic@gmail.com",
   // gitlab: "https://gitlab.com/",
   // facebook: "https://www.facebook.com/",
-  medium: "https://medium.com/",
+  //medium: "https://medium.com/",
   //stackoverflow: "https://stackoverflow.com/users/13263979/drakosi",
   instagram: "https://www.instagram.com/rachit_p/",
   //twitter: "https://twitter.com/davidrakosi_",
@@ -37,11 +37,15 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "Things",
+  subTitle: "Explore. Ideate. Innovate. Execute!",
   skills: [
-    emoji("⚡To be filled in"),
-    emoji("⚡To be filled in"),
-    emoji("⚡To be filled in"),
+    emoji(
+      "⚡   Design & Modelling: Auto-CAD, Solid works, PLM Catia, IDEF0, IDEF3, Revit, Solid Edge (Sheet Metal, Die Casting,),Dynare"
+    ),
+    emoji(
+      "⚡   Data Analysis & Visualization: Excel (VBA, macros, etc.), Python, ANSYS, MATLAB."
+    ),
+    emoji("⚡   Others: MS Office (PowerPoint, Word, Excel), MS Project, C++"),
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -73,9 +77,25 @@ const educationInfo = {
       schoolName: "Dayananda Sagar College of Engineering",
       logo: require("./assets/images/collegeLogo.jpg"),
       subHeader: "Bachelor of Technology in Mechanical Engineering",
-      duration: "Fill in",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: ["Blah blah"],
+      duration: "August 2012 - May 2017",
+      //desc: "Participated in the research of XXX and published 3 papers.",
+      descBullets: [
+        "Design of Machine Elements",
+        "Control Engineering",
+        "Production & Inventory Control and Rapid Prototyping",
+      ],
+    },
+    {
+      schoolName: "Mont Fort College",
+      logo: require("./assets/images/mont.jpg"),
+      subHeader: "Graduation School",
+      duration: "August 2010 - May 2012",
+      //desc: "Participated in the research of XXX and published 3 papers.",
+      descBullets: [
+        "Statistical Methods & Research Methodology",
+        "Engineering Mechanics",
+        "Work Study & Ergonomics",
+      ],
     },
   ],
 };
@@ -107,12 +127,40 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Engineer",
-      company: "ISRO",
+      role: "Control Engineering Intern",
+      company: "Indian Space Research Organization (ISTRAC)",
       companylogo: require("./assets/images/isro.png"),
-      date: "September 2020 – Present",
-      desc: "Changing lives",
-      descBullets: ["Custom building designs", "Learning"],
+      date: "July 2016 – August 2016",
+      //desc: "Changing lives",
+      descBullets: [
+        "Developed Control System for bi-axial antenna used in telemetry and tracking. (Tools used: Simulink, MATLAB.)",
+        "Load-Stress-mapping upon intricate parts on antenna mount. (Tools: Catia, ANSYS)",
+        "Documented survey information and organized data for review by senior engineers. (Telemetry data acquisition)",
+      ],
+    },
+    {
+      role: "CAED Drafter (Freelancing)",
+      company: "Hindustan Unilever",
+      companylogo: require("./assets/images/unilever.jpg"),
+      date: "December 2018 – February 2019",
+      //desc: "Changing lives",
+      descBullets: [
+        "Design Implementation Prior Manufacturing",
+        "Drafting Part design",
+        "Saved 1000$ by implementing cost-saving initiatives that addressed long-standing problems",
+      ],
+    },
+    {
+      role: "Engineering Co-Op",
+      company: "Bhilai Steel Plant, Steel Authority of India Pvt Ltd",
+      companylogo: require("./assets/images/bhilai.jpg"),
+      date: "December 2018 – February 2019",
+      //desc: "Changing lives",
+      descBullets: [
+        "Coordinated dis-assembly & WIP stock availability for all three shifts, minimizing the start-up time loss by 85%",
+        "Inspection of Cranes according to (IS – 3177) for load capacity and fatigue strength calculations",
+        "Analysed processes and implemented 12 Kaizen measures which led to a 7% increase in workforce productivity",
+      ],
     },
   ],
 };
@@ -130,117 +178,111 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Project Work",
+  subtitle: "",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/simulink.jpeg"),
+      projectName: "Development of Antenna Control System",
+      projectDesc:
+        "Designed a Simulink Model for ISRO required by satellite telemetry tracking. Assigning function values to reduce error. Open & closed feedback loop. Servo motor control through PID.",
       footerLink: [
         {
-          name: "Visit Website",
+          name: "Tools used: MATLAB, Simulink.",
           url: "fa",
         },
         //  you can add extra buttons here.
       ],
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/solidworks.png"),
+      projectName: "Design and Fabrication of Remote Operated Hydraulic Jack",
+      projectDesc:
+        "Design Modelling with SOLIDWORK, Load calculation (Capacity 7400lb) through ANSYS.",
       footerLink: [
         {
-          name: "Visit Website",
+          name: "Tool used: SolidWorks, ANSYS etc",
+          url: "",
+        },
+      ],
+    },
+    {
+      image: require("./assets/images/autocad.png"),
+      projectName: "Design Improvement of Compressing Unit",
+      projectDesc:
+        "Generated 3D Model form given AutoCAD blueprint, ran optimization model in ANSYS for viscid fluid (various meshing techniques used). Noted Notch Coefficient for improvement iterations for further use in future.",
+      footerLink: [
+        {
+          name: "Tool used: Solidworks, AutoCAD.",
           url: "",
         },
       ],
     },
   ],
-  display: false, // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
+  title: emoji("Marketing & Business Work"),
+  subtitle: "",
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+      title: "STAPLES Inc.",
+      subtitle: `• Cultivated and maintained strategic alliances with key partners and vendors \n 
+       \n • Used consultative sales approach to understand customer needs and recommend relevant offerings. \n`,
       image: require("./assets/images/codeInLogo.webp"),
       footerLink: [
         {
-          name: "Certification",
-          url: "",
-        },
-        {
-          name: "Award Letter",
-          url: "",
-        },
-        {
-          name: "Google Code-in Blog",
+          name: "Improved Strategies",
           url: "",
         },
       ],
     },
     {
-      title: "Google Assistant Action",
+      title: "Food Business Co-owner",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
+        "• Established revenue generative model based on relationship with various hostel owner",
       image: require("./assets/images/googleAssistantLogo.webp"),
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "",
-        },
-      ],
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      footerLink: [
-        { name: "Certification", url: "" },
-        {
-          name: "Final Project",
+          name: "Supply Chain establishment",
           url: "",
         },
       ],
     },
   ],
-  display: false, // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
 
 const blogSection = {
-  title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-
+  title: "Achievements & Responsibilites",
+  subtitle: "",
   blogs: [
     {
-      url:
-        "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "",
+      title: "Award",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?",
+        "Leadership award by Centre of Innovative Learning (CIL) based on work as Management head of student body association",
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      url: "",
+      title: "Management",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies.",
+        "Managed seasonal events and programmes ranging from senior farewell, graduation ceremony, And our annual Mechanical department varsity event TORQUE, now APOGEE. ",
+    },
+    {
+      url: "",
+      title: "Team Management",
+      description:
+        "Team Management Skills in Resource management based on tight budgeting of events.",
     },
   ],
-  display: false, // Set false to hide this section, defaults to true
+  display: true, // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -275,14 +317,15 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "0",
-  email_address: "blah@blah.com",
+  subtitle: "Cary, NC-27511",
+  number: "(919) 434 9665",
+  email_address: "rachitmic@gmail.com",
 };
 
 // Twitter Section
 
 const twitterDetails = {
-  userName: "davidrakosi_", //Replace "twitter" with your twitter username without @
+  userName: "", //Replace "twitter" with your twitter username without @
   display: false, // Set true to display this section, defaults to false
 };
 
