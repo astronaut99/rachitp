@@ -12,7 +12,7 @@ const greeting = {
   username: "Rachit Pandey",
   title: "Hi all, I'm Rachit",
   subTitle: emoji(
-    "A passionate Mechanical Engineer who thinks in terms of machines & acts on stocks.🚀"
+    "A passionate Mechanical Engineer who thinks in terms of machines & acts on OSPM, AEC Engineering & Rapid Prototyping.🚀"
   ),
   resumeLink: "https://",
   displayGreeting: true, // Set false to hide this section, defaults to true
